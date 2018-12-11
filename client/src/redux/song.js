@@ -3,7 +3,7 @@ import axios from 'axios';
 export function getSongById(id) {
     return dispatch => {
         axios.get(`https://itunes.apple.com/lookup?id=${id}&enity=song&limit=1`, {
-            method: 'get',
+            method: 'GET',
             maxRedirects: 10,
             proxy: false,
             host: 'localhost:4000',
