@@ -8,8 +8,9 @@ export function searchSongs(name) {
             maxRedirects: 1,
             Accept: 'application/json',
             host: 'http://localhost:4000',
+            cors: 'no-cors',
             headers: {
-                
+                "Access-Control-Allow-Origin": "https://mymusichub.herokuapp.com",
                 "Access-Control-Allow-Headers": "X-Custom-Header, Upgrade-Insecure-Requests"
             }
             })
