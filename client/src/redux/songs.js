@@ -8,6 +8,7 @@ export function searchSongs(name) {
             maxRedirects: 1,
             host: 'localhost:4000',
             Accept: 'application/json',
+            origin: 'https://mymusichub.herokuapp.com',
             headers: {
                 "Access-Control-Allow-Origin": "*",
                 "Access-Control-Allow-Headers": "X-Custom-Header, Upgrade-Insecure-Requests"
@@ -31,6 +32,7 @@ export function getSongs(id) {
             maxRedirects: 10,
             proxy: false,
             host: 'localhost:4000',
+            origin: 'https://mymusichub.herokuapp.com',
             headers: {
                 "Access-Control-Allow-Origin": "*",
                 "Access-Control-Allow-Headers": "X-Custom-Header, Upgrade-Insecure-Requests"
