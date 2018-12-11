@@ -24,7 +24,6 @@ app.use('/auth', require('./routes/auth'));
 app.use('/profile', require('./routes/profile'));
 
 var allowCrossDomain = function(req, res, next) {
-    req.header('Access-Control-Allow-Origin', 'https://mymusichub.herokuapp.com');
     res.header('Access-Control-Allow-Origin', 'https://mymusichub.herokuapp.com');
     res.header('Access-Control-Allow-Methods', 'GET, POST, DELETE');
     res.header('Access-Control-Allow-Credentials', true);
