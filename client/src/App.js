@@ -8,7 +8,7 @@ import ProtectedRoute from './ProtectedRoute';
 import { verify } from './redux/auth';
 import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
-import './styles/app.css';
+import './styles/app.css'
 
 class App extends React.Component{
     componentDidMount() {
