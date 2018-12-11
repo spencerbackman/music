@@ -25,7 +25,7 @@ app.use('/profile', require('./routes/profile'));
 
 mongoose.Promise = global.Promise;
 mongoose.set('useCreateIndex', true);
-mongoose.connect('mongodb://localhost/tracks', {useNewUrlParser: true}, (err) => {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/tracks', {useNewUrlParser: true}, (err) => {
     if(err) console.log(err);
     console.log('connected to db');
 });
