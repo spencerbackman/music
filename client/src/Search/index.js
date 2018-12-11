@@ -2,8 +2,7 @@ import React from 'react';
 import SongPlayer from './SongPlayer';
 import '../styles/songSearch.css';
 import {connect} from 'react-redux';
-import {getSongById} from '../redux/song';
-import {searchSongs, getSongs} from '../redux/songs';
+import {searchSongs} from '../redux/songs';
 
 class Songsearch extends React.Component {
     constructor() {
@@ -28,6 +27,7 @@ class Songsearch extends React.Component {
     }
 
     render() {
+        console.log(this.props.songs)
         return (
             <div className="search-page">
                 <form className="search-form" onSubmit={ this.handleSubmit }>
@@ -38,8 +38,6 @@ class Songsearch extends React.Component {
                     placeholder="  Search..."
                     onChange={ this.handleChange }
                     id="search"
-                    autoComplete="off"
-                    list="autocompleteoff"
                     />
                 </form>
                 <SongPlayer data={this.props.songs}/>
@@ -48,4 +46,4 @@ class Songsearch extends React.Component {
     }
 }
 
-export default connect(state => state, {getSongById, searchSongs, getSongs})(Songsearch);
+export default connect(state => state, {searchSongs})(Songsearch);
