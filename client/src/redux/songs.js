@@ -2,11 +2,12 @@ import axios from 'axios';
 
 export function searchSongs(name) {
     return dispatch => {
-        axios.get(`https://itunes.apple.com/search?term=${name}&limit=10`, {
+        axios.get(`https://itunes.apple.com/lookup?term=${name}&enity=music&limit=10`, {
             method: 'GET',
             proxy: false,
             maxRedirects: 1,
             Accept: 'application/json',
+            host: 'http://localhost:4000',
             headers: {
                 "Access-Control-Allow-Origin": "https://mymusichub.herokuapp.com",
                 "Access-Control-Allow-Headers": "X-Custom-Header, Upgrade-Insecure-Requests"
