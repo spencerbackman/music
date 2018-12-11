@@ -38,6 +38,8 @@ class Songsearch extends React.Component {
                     placeholder="  Search..."
                     onChange={ this.handleChange }
                     id="search"
+                    autoComplete="off"
+                    list="autocompleteoff"
                     />
                 </form>
                 <SongPlayer data={this.props.songs}/>
