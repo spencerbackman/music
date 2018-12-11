@@ -10,7 +10,7 @@ export function searchSongs(name) {
             Accept: 'application/json',
             origin: 'https://mymusichub.herokuapp.com',
             headers: {
-                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Origin": "https://mymusichub.herokuapp.com",
                 "Access-Control-Allow-Headers": "X-Custom-Header, Upgrade-Insecure-Requests"
             }
             })
@@ -34,7 +34,7 @@ export function getSongs(id) {
             host: 'localhost:4000',
             origin: 'https://mymusichub.herokuapp.com',
             headers: {
-                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Origin": "https://mymusichub.herokuapp.com",
                 "Access-Control-Allow-Headers": "X-Custom-Header, Upgrade-Insecure-Requests"
             },
         })
