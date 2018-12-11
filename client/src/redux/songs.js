@@ -8,6 +8,7 @@ export function searchSongs(name) {
             maxRedirects: 1,
             Accept: 'application/json',
             origin: 'https://mymusichub.herokuapp.com',
+            referer: 'https://mymusichub.herokuapp.com/search',
             headers: {
                 "Access-Control-Allow-Origin": "https://mymusichub.herokuapp.com",
                 "Access-Control-Allow-Headers": "X-Custom-Header, Upgrade-Insecure-Requests"
