@@ -1,0 +1,41 @@
+.select-menu select {
+    width: 100px;
+    padding: 2px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    position: relative;
+}
+
+.select-menu {
+    width: 100px;
+    overflow: hidden;
+    border-top: #f4f6f7 1px solid;
+    border-radius: 4px 4px 4px 4px;
+    position: relative;
+}
+
+.select-menu:before {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    width: 0;
+    height: 0;
+}
+
+.new-playlist-input {
+    color: #222323;
+    border: none;
+}
+
+#add-song-toggle {
+    font-size: 30px;
+}
+
+#add-song-button {
+    margin-left: 20px;
+}

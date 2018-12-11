@@ -1,0 +1,46 @@
+.side-nav {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #06080A;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.nav-wrapper {
+    list-style-type: none;
+}
+
+.nav-link {
+    display: block;
+    color: #E6E7E3;
+    text-decoration: none;
+    padding: 20px 30px 10px 0;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+.nav-login {
+    font-size: 25px;
+    margin-left: 25%;
+}
+
+.nav-name {
+    font-size: 25px;
+}
+
+.nav-logout {
+    font-size: 25px;
+    margin-left: 25px;
+}
+
+.nav-icons {
+    height: 15px;
+    width: 15px;
+    padding-right: 10px;
+}
