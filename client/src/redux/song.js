@@ -7,9 +7,8 @@ export function getSongById(id) {
             maxRedirects: 10,
             proxy: false,
             host: 'localhost:4000',
-            origin: 'https://mymusichub.herokuapp.com',
             headers: {
-                "Access-Control-Allow-Origin": "https://mymusichub.herokuapp.com",
+                "Access-Control-Allow-Origin": "http://localhost:3000",
                 "Access-Control-Allow-Headers": "X-Custom-Header, Upgrade-Insecure-Requests"
             },
         })
