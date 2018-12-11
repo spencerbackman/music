@@ -24,8 +24,7 @@ app.use('/auth', require('./routes/auth'));
 app.use('/profile', require('./routes/profile'));
 
 var allowCrossDomain = function(req, res, next) {
-    req.header('Access-Control-Allow-Origin', 'https://mymusichub.herokuapp.com')
-    req.header('Access-Control-Allow-Credentials', true)
+    req.header('Access-Control-Allow-Origin', 'https://mymusichub.herokuapp.com');
     res.header('Access-Control-Allow-Origin', 'https://mymusichub.herokuapp.com');
     res.header('Access-Control-Allow-Methods', 'GET, POST, DELETE');
     res.header('Access-Control-Allow-Credentials', true);
@@ -34,7 +33,6 @@ var allowCrossDomain = function(req, res, next) {
 
 app.use(allowCrossDomain)
 
-mongoose.Promise = global.Promise;
 mongoose.set('useCreateIndex', true);
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/tracks', {useNewUrlParser: true}, (err) => {
     if(err) console.log(err);
