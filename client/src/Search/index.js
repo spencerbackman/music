@@ -42,7 +42,7 @@ class Songsearch extends React.Component {
                     list="autocompleteoff"
                     />
                 </form>
-                <SongPlayer data={this.props.songs}/>
+                <SongPlayer data={this.props.songList}/>
             </div>
         )
     }
